@@ -50,7 +50,6 @@ Follow these sub-steps to create and set up your database:
 | TotalMinutes_NAS_Delay            | int           | NULL                     | NO          |
 | TotalMinutes_Security_Delay       | int           | NULL                     | NO          |
 | TotalMinutes_LateAircraft_Delay   | int           | NULL                     | NO          |
-|--------------------------------------------------------------------------------------------|
 
 ### Step 2: Connect to the Database
 Use the following SQL statement to set the context for the `FlightsDelay` database and connect it to the one you created in SSMS:
