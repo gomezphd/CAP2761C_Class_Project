@@ -1,5 +1,14 @@
 # Airline On-Time Arrival Performance Analysis for Domestic Flights in March 2024
 
+## Files in Folder
+| README.md                                       | This file
+| AirlinePerformance2024-03_GitHubVersion.ipynb   | Azure Notebook File - Main File     |
+|-------------------------------------------------|-------------------------------------|
+| AirlinePerformanceMarch2024.sql                 |                                     |
+| FlightDelaysMarch2024_Clean.csv                 |                                     |
+|FlightDelaysMarch2024_Clean.xlsx                 |                                     |
+
+
 ## Project Overview
 This project analyzes the on-time arrival performance of domestic flights in March 2024, providing insights into flight delays, performance metrics, and various factors affecting punctuality.
 
