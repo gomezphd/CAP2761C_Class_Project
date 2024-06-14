@@ -2,10 +2,10 @@
 A professional portfolio showcasing my projects across various domains including my focus on data science, healthcare technology, and user experience.
 
 ## About
-This project utilizes the Solid State template by HTML5 UP to provide a sleek, modern design for showcasing my work. 
+This project utilizes the Solid State template by HTML5 UP to provide a sleek, modern design for showcasing my work.
 
 ## License
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license).
+Free for personal and commercial use under the CCA 3.0 license (http://creativecommons.org/licenses/by/3.0/).
 
 ## Credits
 ### Template and Design:
