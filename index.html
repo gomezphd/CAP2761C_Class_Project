@@ -61,13 +61,23 @@
         }
 
         .section-title {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: #002147; /* Oxford Blue */
+            background-color: #002147; /* Oxford Blue */
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-weight: bold;
         }
 
-        .about, .skills, .projects, .education, .contact {
-            margin-bottom: 2rem;
+        .section-content {
+            background-color: #f0f8ff; /* Alice Blue */
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            color: #000000;
+            font-size: 16px;
         }
 
         ul {
@@ -131,11 +141,23 @@
             margin-top: -3rem;
         }
 
-        h3 {
-            color: #002147; /* Oxford Blue */
-            background: linear-gradient(135deg, #002147, #4682B4); /* Optional: apply gradient */
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        .note {
+            color: #800000;
+            font-weight: bold;
+        }
+
+        .important {
+            color: #000080;
+            font-weight: bold;
+        }
+
+        pre {
+            background-color: #ffffff;
+            padding: 10px;
+            border: 1px solid #004080;
+            border-radius: 8px;
+            color: #000080;
+            font-size: 16px;
         }
     </style>
 </head>
@@ -154,59 +176,69 @@
     </nav>
 
     <div class="container">
-        <div id="about" class="section about">
-            <h2 class="section-title">About Me</h2>
-            <p>
-                I am Carlos C. Gomez, PhD, a licensed psychologist with over 16 years of experience in private practice and academic roles. My expertise spans psychology, psychometrics, and data science. With a strong foundation in analytical skills and exploratory data analysis, I am currently training to expand into the tech field. I am open to professional experiences and collaborations focusing on leveraging technology to enhance health care and end user experiences.
-            </p>
+        <div id="about" class="section">
+            <div class="section-title">About Me</div>
+            <div class="section-content">
+                <p>
+                    I am Carlos C. Gomez, PhD, a licensed psychologist with over 16 years of experience in private practice and academic roles. My expertise spans psychology, psychometrics, and data science. With a strong foundation in analytical skills and exploratory data analysis, I am currently training to expand into the tech field. I am open to professional experiences and collaborations focusing on leveraging technology to enhance health care and end user experiences.
+                </p>
+            </div>
         </div>
 
-        <div id="education" class="section education">
-            <h2 class="section-title">Education</h2>
-            <h3>In Progress</h3>
-            <ul>
-                <li><span>Business Intelligence Professional (CCC):</span> Miami Dade College (July 2024)</li>
-                <li><span>AI Awareness Certificate:</span> Miami Dade College (December 2024)</li>
-                <li><span>IBM Data Science Professional Certificate:</span> Coursera (August 2024)</li>
-            </ul>
-            <h3>Completed</h3>
-            <ul>
-                <li><span>Fellowship, Clinical Health Psychology:</span> University of Miami Miller School of Medicine</li>
-                <li><span>Psychology Internship, Clinical Psychology:</span> Jackson Memorial Hospital</li>
-                <li><span>PhD, Counseling Psychology and Human Systems:</span> Florida State University</li>
-                <li><span>MS/Ed.D. Mental Health Counseling and Human Systems:</span> Florida State University</li>
-                <li><span>BS. Industrial and Labor Relations:</span> Cornell University</li>
-            </ul>
+        <div id="education" class="section">
+            <div class="section-title">Education</div>
+            <div class="section-content">
+                <h3>In Progress</h3>
+                <ul>
+                    <li><span>Business Intelligence Professional (CCC):</span> Miami Dade College (July 2024)</li>
+                    <li><span>AI Awareness Certificate:</span> Miami Dade College (December 2024)</li>
+                    <li><span>IBM Data Science Professional Certificate:</span> Coursera (August 2024)</li>
+                </ul>
+                <h3>Completed</h3>
+                <ul>
+                    <li><span>Fellowship, Clinical Health Psychology:</span> University of Miami Miller School of Medicine</li>
+                    <li><span>Psychology Internship, Clinical Psychology:</span> Jackson Memorial Hospital</li>
+                    <li><span>PhD, Counseling Psychology and Human Systems:</span> Florida State University</li>
+                    <li><span>MS/Ed.D. Mental Health Counseling and Human Systems:</span> Florida State University</li>
+                    <li><span>BS. Industrial and Labor Relations:</span> Cornell University</li>
+                </ul>
+            </div>
         </div>
 
-        <div id="projects" class="section projects">
-            <h2 class="section-title">Projects</h2>
-            <ul>
-                <li><span>Project 1:</span> Airline On-Time Arrival Performance Analysis for Domestic Flights in March 2024 - <a href="https://github.com/gomezphd/CAP2761C_Class_Project/tree/main/Airlines" target="_blank">View Details</a></li>
-            </ul>
+        <div id="projects" class="section">
+            <div class="section-title">Projects</div>
+            <div class="section-content">
+                <ul>
+                    <li><span>Project 1:</span> Airline On-Time Arrival Performance Analysis for Domestic Flights in March 2024 - <a href="https://github.com/gomezphd/CAP2761C_Class_Project/tree/main/Airlines" target="_blank">View Details</a></li>
+                </ul>
+            </div>
         </div>
 
-        <div id="skills" class="section skills">
-            <h2 class="section-title">Skills</h2>
-            <ul>
-                <li>SQL</li>
-                <li>Python</li>
-                <li>Power Bi</li>
-                <li>Tableau</li>
-                <li>Analytical Skills</li>
-                <li>Exploratory Data Analysis</li>
-                <li>Business Requirements</li>
-                <li>Clinical Psychology</li>
-                <li>Executive Coaching</li>
-            </ul>
+        <div id="skills" class="section">
+            <div class="section-title">Skills</div>
+            <div class="section-content">
+                <ul>
+                    <li>SQL</li>
+                    <li>Python</li>
+                    <li>Power Bi</li>
+                    <li>Tableau</li>
+                    <li>Analytical Skills</li>
+                    <li>Exploratory Data Analysis</li>
+                    <li>Business Requirements</li>
+                    <li>Clinical Psychology</li>
+                    <li>Executive Coaching</li>
+                </ul>
+            </div>
         </div>
 
-        <div id="contact" class="section contact">
-            <h2 class="section-title">Contact</h2>
-            <p>Email: <a href="mailto:cgomez@gomezphd.com">cgomez@gomezphd.com</a></p>
-            <div class="social-icons">
-                <a href="https://github.com/gomezphd" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/gomezphd/" target="_blank">LinkedIn</a>
+        <div id="contact" class="section">
+            <div class="section-title">Contact</div>
+            <div class="section-content">
+                <p>Email: <a href="mailto:cgomez@gomezphd.com">cgomez@gomezphd.com</a></p>
+                <div class="social-icons">
+                    <a href="https://github.com/gomezphd" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/gomezphd/" target="_blank">LinkedIn</a>
+                </div>
             </div>
         </div>
     </div>
