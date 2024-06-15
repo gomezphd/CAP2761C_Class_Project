@@ -3,153 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Portfolio of Carlos C. Gomez, PhD</title>
+    <title>Carlos C. Gomez, Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #93B5CE; /* Light Sky Blue */
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #93B5CE; /* Light Sky Blue */
+            color: #333;
+        }
+
         header {
             background-color: #002147; /* Oxford Blue */
-            color: #fff;
-            padding: 1em 0;
+            color: #ffffff;
+            padding: 1rem;
             text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        main {
-            padding: 2em;
-            max-width: 800px;
-            margin: auto;
-            background-color: #fff;
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
         }
-        footer {
+
+        nav {
             background-color: #002147; /* Oxford Blue */
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        a {
-            color: #4682B4; /* Steel Blue */
+
+        nav a {
+            color: #ffffff;
             text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.25rem;
         }
-        a:hover {
+
+        nav a:hover {
             text-decoration: underline;
         }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            text-align: center;
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            background-color: #ffffff;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #002147; /* Oxford Blue */
+        }
+
+        .about, .skills, .projects, .education, .contact {
+            margin-bottom: 2rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            padding: 0.5rem 0;
+        }
+
+        ul li span {
+            font-weight: bold;
+        }
+
+        ul li ul {
+            padding-left: 1rem;
+        }
+
+        a {
+            color: #002147; /* Oxford Blue */
             text-decoration: none;
-            outline: none;
-            color: #fff;
-            background-color: #2F3C52; /* Prussian Blue */
-            border: none;
-            border-radius: 15px;
-            box-shadow: 0 9px #627383; /* Payne's Gray */
+            transition: color 0.3s ease;
         }
-        .button:hover {
-            background-color: #627383; /* Payne's Gray */
+
+        a:hover {
+            color: #4682B4; /* Steel Blue */
         }
-        .button:active {
-            background-color: #627383; /* Payne's Gray */
-            box-shadow: 0 5px #658196; /* Slate Gray */
-            transform: translateY(4px);
+
+        .background {
+            background: linear-gradient(135deg, #002147, #4682B4); /* Oxford Blue to Steel Blue */
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-icons a {
+            color: #002147; /* Oxford Blue */
+            font-size: 1.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #002147; /* Oxford Blue */
+            color: white;
+        }
+
+        .section {
+            padding-top: 3rem;
+            margin-top: -3rem;
+        }
+
+        h3 {
+            color: #002147; /* Oxford Blue */
+            background: linear-gradient(135deg, #002147, #4682B4); /* Optional: apply gradient */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     </style>
 </head>
 <body>
+    <div class="background"></div>
     <header>
-        <h1>Tech Portfolio of Carlos C. Gomez, PhD</h1>
-        <p>Class Project: Under Construction</p>
+        <h1>Carlos C. Gomez, Portfolio</h1>
     </header>
-    <main>
-        <section>
-            <h2>Contact</h2>
-            <p><a href="mailto:cgomez@gomezphd.com">cgomez@gomezphd.com</a></p>
-            <p><a href="https://www.linkedin.com/in/gomezphd/" target="_blank">My LinkedIn Page</a></p>
-        </section>
-        <section>
-            <h2>Projects</h2>
-            <h3><a href="https://github.com/gomezphd/CAP2761C_Class_Project/tree/main/Airlines" target="_blank">Project 1: Airline On-Time Arrival Performance Analysis for Domestic Flights in March 2024</a></h3>
-            <p>This project involves analyzing the on-time performance of domestic flights in March 2024. The analysis covers various aspects such as the percentage of on-time arrivals, reasons for delays, and performance comparison among different airlines.</p>
-        </section>
-        <section>
-            <h2>Education</h2>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div id="about" class="section about">
+            <h2 class="section-title">About Me</h2>
+            <p>
+                I am Carlos C. Gomez, PhD, a licensed psychologist with over 16 years of experience in private practice and academic roles. My expertise spans psychology, psychometrics, and data science. With a strong foundation in analytical skills and exploratory data analysis, I am currently training to expand into the tech field. I am open to professional experiences and collaborations focusing on leveraging technology to enhance health care and end user experiences.
+            </p>
+        </div>
+
+        <div id="education" class="section education">
+            <h2 class="section-title">Education</h2>
+            <h3>In Progress</h3>
             <ul>
-                <li><strong>Cornell University</strong>: BS, Industrial and Labor Relations (1991 - 1995)</li>
-                <li><strong>Florida State University</strong>: PhD, Counseling Psychology and Human Systems, Counseling Psychology & School Psychology (2000 - 2004)</li>
-                <li><strong>Miami Dade College</strong>: Business Intelligence Professional, Data Analytics (Aug 2023 - Jul 2024)</li>
-                <li><strong>Florida State University</strong>: MS & EdS in Mental Health Counseling and Human Systems (1998 - 2000)</li>
+                <li><span>Business Intelligence Professional (CCC):</span> Miami Dade College (July 2024)</li>
+                <li><span>AI Awareness Certificate:</span> Miami Dade College (December 2024)</li>
+                <li><span>IBM Data Science Professional Certificate:</span> Coursera (August 2024)</li>
             </ul>
-        </section>
-        <section>
-            <h2>Tech Certificates</h2>
+            <h3>Completed</h3>
             <ul>
-                <li><strong>IBM Machine Learning with Python</strong> (Issued Jan 2024)</li>
-                <li><strong>AI For Everyone</strong> (Issued Dec 2023)</li>
-                <li><strong>IBM Data Analysis with Python</strong> (Issued Dec 2023)</li>
-                <li><strong>IBM Data Science Methodology</strong> (Issued Dec 2023)</li>
-                <li><strong>IBM Python Project for Data Science</strong> (Issued Dec 2023)</li>
-                <li><strong>IBM Python for Data Science, AI & Development</strong> (Issued Dec 2023)</li>
-                <li><strong>Tools for Data Science</strong> (Issued Dec 2023)</li>
-                <li><strong>What is Data Science?</strong> (Issued Dec 2023)</li>
+                <li><span>Fellowship, Clinical Health Psychology:</span> University of Miami Miller School of Medicine</li>
+                <li><span>Psychology Internship, Clinical Psychology:</span> Jackson Memorial Hospital</li>
+                <li><span>PhD, Counseling Psychology and Human Systems:</span> Florida State University</li>
+                <li><span>MS/Ed.D. Mental Health Counseling and Human Systems:</span> Florida State University</li>
+                <li><span>BS. Industrial and Labor Relations:</span> Cornell University</li>
             </ul>
-        </section>
-        <section>
-            <h2>Non-Tech Professional Licenses & Certifications</h2>
+        </div>
+
+        <div id="projects" class="section projects">
+            <h2 class="section-title">Projects</h2>
             <ul>
-                <li><strong>Licensed Psychologist, State of Florida</strong> (Issued May 2006)</li>
-                <li><strong>PSYPACT Authority to Practice Interjurisdictional Telepsychology</strong> (Issued Sep 2023)</li>
-                <li><strong>National Certified Counselor (NCC)</strong> (Issued Jun 2000)</li>
+                <li><span>Project 1:</span> Airline On-Time Arrival Performance Analysis for Domestic Flights in March 2024 - <a href="https://github.com/gomezphd/CAP2761C_Class_Project/tree/main/Airlines" target="_blank">View Details</a></li>
             </ul>
-        </section>
-        <section>
-            <h2>Other Certifications</h2>
+        </div>
+
+        <div id="skills" class="section skills">
+            <h2 class="section-title">Skills</h2>
             <ul>
-                <li><strong>RRCA Certified Adult Distance Running Coach</strong> (Issued Sep 2023)</li>
-                <li><strong>Precision Nutrition Level 1 Certified</strong> (Issued Jun 2023)</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Skills</h2>
-            <h3>Technical Skills</h3>
-            <ul>
-                <li>Advanced Statistics (Undergraduate and Graduate Level)</li>
-                <li>Clinical Research Methods</li>
-                <li>Ethical Reasoning</li>
+                <li>SQL</li>
                 <li>Python</li>
-                <li>Data Analysis</li>
-                <li>Machine Learning</li>
-                <li>SQL (Azure Visual Studio, MySQL, SQL Server Management Studio,& SQLite )</li>
-                <li>GitHub</li>
-                <li>Jupyter</li>
-            </ul>
-            <h3>Non-Technical Skills</h3>
-            <ul>
-                <li>Psychological Testing</li>
-                <li>Life Coaching</li>
-                <li>Counseling Psychology</li>
-                <li>Psychological Assessment</li>
+                <li>Power Bi</li>
+                <li>Tableau</li>
+                <li>Analytical Skills</li>
+                <li>Exploratory Data Analysis</li>
+                <li>Business Requirements</li>
                 <li>Clinical Psychology</li>
                 <li>Executive Coaching</li>
-                <li>Career Counseling</li>
-                <li>Mental Health Counseling</li>
-                <li>Psychotherapy</li>
             </ul>
-        </section>
-    </main>
+        </div>
+
+        <div id="contact" class="section contact">
+            <h2 class="section-title">Contact</h2>
+            <p>Email: <a href="mailto:cgomez@gomezphd.com">cgomez@gomezphd.com</a></p>
+            <div class="social-icons">
+                <a href="https://github.com/gomezphd" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/gomezphd/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+
     <footer>
-        <p>&copy; 2024 Carlos C. Gomez, PhD</p>
+        <p>&copy; 2024 Carlos C. Gomez, PhD. All Rights Reserved.</p>
     </footer>
-    <script>
-        // Example JavaScript function
-        console.log('Welcome to my project page!');
-    </script>
 </body>
 </html>
