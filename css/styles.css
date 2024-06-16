@@ -11,7 +11,134 @@ body {
     color: #000000; /* Black */
 }
 
-/* Footer Styles */
+header {
+    background-color: #002147; /* Oxford Blue */
+    color: #ffffff; /* White */
+    padding: 0.5rem 1rem; /* Reduced padding */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.2rem; /* Slightly reduced font size */
+    font-weight: 700;
+    margin-bottom: 0.3rem; /* Reduced margin */
+}
+
+.tagline {
+    font-size: 1rem; /* Reduced font size */
+    color: #ffffff; /* White */
+    margin: 0.5rem 0; /* Reduced top margin */
+}
+
+nav {
+    background-color: #2F3C52; /* Prussian Blue */
+    display: flex;
+    justify-content: center;
+    padding: 0.3rem; /* Reduced padding */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #ffffff; /* White */
+    text-decoration: none;
+    margin: 0 0.5rem; /* Reduced margin */
+    font-size: 1.1rem; /* Slightly reduced font size */
+}
+
+nav a:hover {
+    color: #4682B4; /* Steel Blue */
+    text-decoration: underline;
+}
+
+.separator {
+    background-color: #2F3C52; /* Prussian Blue */
+    height: 2px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 1.5rem auto; /* Reduced margin */
+    background-color: #ffffff; /* White */
+    padding: 1.5rem; /* Reduced padding */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.section-title {
+    background-color: #002147; /* Oxford Blue */
+    color: #ffffff; /* White */
+    padding: 8px; /* Reduced padding */
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 15px; /* Reduced margin */
+    font-size: 18px; /* Slightly reduced font size */
+    font-weight: bold;
+}
+
+.section-content {
+    background-color: #D3D3D3; /* Light Gray */
+    padding: 15px; /* Reduced padding */
+    border-radius: 8px;
+    margin-bottom: 15px; /* Reduced margin */
+    color: #000000; /* Black */
+    font-size: 14px; /* Slightly reduced font size */
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    padding: 0.4rem 0; /* Reduced padding */
+}
+
+ul li span {
+    font-weight: bold;
+}
+
+ul li ul {
+    padding-left: 0.8rem; /* Reduced padding */
+}
+
+a {
+    color: #002147; /* Oxford Blue */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #4682B4; /* Steel Blue */
+}
+
+.background {
+    background: linear-gradient(135deg, #002147, #4682B4); /* Oxford Blue to Steel Blue */
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem; /* Reduced gap */
+    margin-top: 0.5rem; /* Reduced margin */
+}
+
+.social-icons a {
+    color: #ffffff; /* White */
+    font-size: 1.3rem; /* Slightly reduced font size */
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #4682B4; /* Steel Blue */
+}
+
 footer {
     text-align: center;
     padding: 0.5rem 1rem; /* Reduced padding */
@@ -31,19 +158,26 @@ footer .expertise {
     margin-bottom: 0.5rem; /* Reduced margin */
 }
 
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 0.8rem; /* Reduced gap */
-    margin-top: 0.5rem; /* Reduced margin */
+.section {
+    padding-top: 2.5rem; /* Reduced padding */
+    margin-top: -2.5rem; /* Adjusted margin */
 }
 
-.social-icons a {
-    color: #ffffff; /* White */
-    font-size: 1.3rem; /* Slightly reduced font size */
-    text-decoration: none;
+.note {
+    color: #627383; /* Payne's Gray */
+    font-weight: bold;
 }
 
-.social-icons a:hover {
-    color: #4682B4; /* Steel Blue */
+.important {
+    color: #658196; /* Slate Gray */
+    font-weight: bold;
+}
+
+pre {
+    background-color: #ffffff; /* White */
+    padding: 8px; /* Reduced padding */
+    border: 1px solid #2F3C52; /* Prussian Blue */
+    border-radius: 8px;
+    color: #000000; /* Black */
+    font-size: 14px; /* Slightly reduced font size */
 }
