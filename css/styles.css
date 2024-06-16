@@ -28,7 +28,7 @@ h1 {
 .tagline {
     font-size: 1rem; /* Reduced font size */
     color: #ffffff; /* White */
-    margin: 0.5rem 0; /* Reduced margin */
+    margin: 0.5rem 0; /* Reduced top margin */
 }
 
 nav {
@@ -154,7 +154,7 @@ footer p {
 }
 
 footer .expertise {
-    font-size: 1rem; /* Adjusted font size */
+    font-size: 1.1rem; /* Adjusted font size */
     margin-bottom: 0.5rem; /* Reduced margin */
 }
 
