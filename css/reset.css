@@ -1,1 +1,8 @@
-"/* reset.css */\n/* General Reset */\n* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n}" 
+/* reset.css */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

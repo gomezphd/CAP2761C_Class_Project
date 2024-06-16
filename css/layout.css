@@ -1,1 +1,44 @@
-"/* layout.css */\n/* Placeholder for layout styles */" 
+/* layout.css */
+
+/* Body Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Ensure the container takes up the necessary space */
+html, body {
+    height: 100%;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--white);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    flex-grow: 1; /* Ensures the container takes up available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.background {
+    background: linear-gradient(135deg, var(--oxford-blue), var(--steel-blue)); /* Oxford Blue to Steel Blue */
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+header {
+    background-color: var(--oxford-blue);
+    color: var(--white);
+    padding: 1rem 0; /* Increased padding for better spacing */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
