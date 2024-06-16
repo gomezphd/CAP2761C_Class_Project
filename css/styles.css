@@ -7,43 +7,43 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    background-color: #93B5CE; /* Light Sky Blue */
-    color: #000000; /* Black */
+    background-color: #f5f5f5; /* Light Grey Background */
+    color: #333333; /* Dark Grey Text */
 }
 
 header {
     background-color: #002147; /* Oxford Blue */
     color: #ffffff; /* White */
-    padding: 0.5rem 1rem; /* Reduced padding */
+    padding: 1rem 0; /* Increased padding for better spacing */
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    font-size: 2.2rem; /* Slightly reduced font size */
+    font-size: 2.5rem; /* Increased font size */
     font-weight: 700;
-    margin-bottom: 0.3rem; /* Reduced margin */
+    margin-bottom: 0.5rem; /* Added margin for spacing */
 }
 
 .tagline {
-    font-size: 1rem; /* Reduced font size */
+    font-size: 1.2rem; /* Slightly increased font size */
     color: #ffffff; /* White */
-    margin: 0.5rem 0; /* Reduced top margin */
+    margin: 0.5rem 0; /* Adjusted margin */
 }
 
 nav {
     background-color: #2F3C52; /* Prussian Blue */
     display: flex;
     justify-content: center;
-    padding: 0.3rem; /* Reduced padding */
+    padding: 0.5rem 0; /* Adjusted padding for better spacing */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
     color: #ffffff; /* White */
     text-decoration: none;
-    margin: 0 0.5rem; /* Reduced margin */
-    font-size: 1.1rem; /* Slightly reduced font size */
+    margin: 0 1rem; /* Increased margin for better spacing */
+    font-size: 1.2rem; /* Slightly increased font size */
 }
 
 nav a:hover {
@@ -54,13 +54,14 @@ nav a:hover {
 .separator {
     background-color: #2F3C52; /* Prussian Blue */
     height: 2px;
+    margin: 1rem 0; /* Added margin for spacing */
 }
 
 .container {
     max-width: 1000px;
-    margin: 1.5rem auto; /* Reduced margin */
+    margin: 2rem auto; /* Increased margin for better spacing */
     background-color: #ffffff; /* White */
-    padding: 1.5rem; /* Reduced padding */
+    padding: 2rem; /* Adjusted padding */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
@@ -68,21 +69,21 @@ nav a:hover {
 .section-title {
     background-color: #002147; /* Oxford Blue */
     color: #ffffff; /* White */
-    padding: 8px; /* Reduced padding */
+    padding: 10px;
     border-radius: 8px;
     text-align: center;
-    margin-bottom: 15px; /* Reduced margin */
-    font-size: 18px; /* Slightly reduced font size */
+    margin-bottom: 20px; /* Adjusted margin */
+    font-size: 1.5rem; /* Adjusted font size */
     font-weight: bold;
 }
 
 .section-content {
     background-color: #D3D3D3; /* Light Gray */
-    padding: 15px; /* Reduced padding */
+    padding: 20px;
     border-radius: 8px;
-    margin-bottom: 15px; /* Reduced margin */
-    color: #000000; /* Black */
-    font-size: 14px; /* Slightly reduced font size */
+    margin-bottom: 20px; /* Adjusted margin */
+    color: #333333; /* Dark Grey Text */
+    font-size: 1rem; /* Adjusted font size */
 }
 
 ul {
@@ -91,7 +92,7 @@ ul {
 }
 
 ul li {
-    padding: 0.4rem 0; /* Reduced padding */
+    padding: 0.5rem 0;
 }
 
 ul li span {
@@ -99,7 +100,7 @@ ul li span {
 }
 
 ul li ul {
-    padding-left: 0.8rem; /* Reduced padding */
+    padding-left: 1rem;
 }
 
 a {
@@ -125,14 +126,13 @@ a:hover {
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 0.8rem; /* Reduced gap */
-    margin-top: 0.5rem; /* Reduced margin */
+    gap: 1rem; /* Adjusted gap for better spacing */
+    margin-top: 1rem; /* Adjusted margin */
 }
 
 .social-icons a {
     color: #ffffff; /* White */
-    font-size: 1.3rem; /* Slightly reduced font size */
-    text-decoration: none;
+    font-size: 1.5rem;
 }
 
 .social-icons a:hover {
@@ -141,6 +141,43 @@ a:hover {
 
 footer {
     text-align: center;
-    padding: 0.5rem 1rem; /* Reduced padding */
+    padding: 1rem; /* Adjusted padding */
     background-color: #2F3C52; /* Prussian Blue */
-    color: #ffffff; /* Whi
+    color: #ffffff; /* White */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0.5rem 0; /* Adjusted margin */
+}
+
+footer .expertise {
+    font-size: 1.1rem; /* Adjusted font size */
+    margin-bottom: 0.5rem; /* Adjusted margin */
+}
+
+.section {
+    padding-top: 3rem;
+    margin-top: -3rem;
+}
+
+.note {
+    color: #627383; /* Payne's Gray */
+    font-weight: bold;
+}
+
+.important {
+    color: #658196; /* Slate Gray */
+    font-weight: bold;
+}
+
+pre {
+    background-color: #ffffff; /* White */
+    padding: 10px;
+    border: 1px solid #2F3C52; /* Prussian Blue */
+    border-radius: 8px;
+    color: #000000; /* Black */
+    font-size: 1rem; /* Adjusted font size */
+}
