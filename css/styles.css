@@ -194,3 +194,16 @@ pre {
     color: #000000; /* Black */
     font-size: 1rem; /* Adjusted font size */
 }
+
+/* Additional Section Styling */
+.section {
+    margin-bottom: 2rem; /* Add spacing between sections */
+}
+
+.section-title {
+    margin-bottom: 1rem; /* Add spacing below section titles */
+}
+
+.section-content {
+    padding: 1.5rem; /* Adjusted padding for section content */
+}
