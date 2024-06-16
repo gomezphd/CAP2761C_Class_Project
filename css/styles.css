@@ -15,10 +15,6 @@ body {
     line-height: 1.6;
     background-color: #f5f5f5; /* Light Grey Background */
     color: #333333; /* Dark Grey Text */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 /* Header Styling */
@@ -160,7 +156,7 @@ a:hover {
 /* Background Styling */
 .background {
     background: linear-gradient(135deg, #002147, #4682B4); /* Oxford Blue to Steel Blue */
-    height: 100vh;
+    height: 100%;
     width: 100%;
     position: fixed;
     top: 0;
