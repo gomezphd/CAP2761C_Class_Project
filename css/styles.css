@@ -14,36 +14,36 @@ body {
 header {
     background-color: #002147; /* Oxford Blue */
     color: #ffffff; /* White */
-    padding: 1rem;
+    padding: 0.5rem 1rem; /* Reduced padding */
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem; /* Slightly reduced font size */
     font-weight: 700;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem; /* Reduced margin */
 }
 
 .tagline {
-    font-size: 1.2rem;
+    font-size: 1rem; /* Reduced font size */
     color: #ffffff; /* White */
-    margin-top: 0.5rem;
+    margin: 0.5rem 0; /* Reduced margin */
 }
 
 nav {
     background-color: #2F3C52; /* Prussian Blue */
     display: flex;
     justify-content: center;
-    padding: 0.5rem;
+    padding: 0.3rem; /* Reduced padding */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
     color: #ffffff; /* White */
     text-decoration: none;
-    margin: 0 1rem;
-    font-size: 1.25rem;
+    margin: 0 0.5rem; /* Reduced margin */
+    font-size: 1.1rem; /* Slightly reduced font size */
 }
 
 nav a:hover {
@@ -58,9 +58,9 @@ nav a:hover {
 
 .container {
     max-width: 1000px;
-    margin: 2rem auto;
+    margin: 1.5rem auto; /* Reduced margin */
     background-color: #ffffff; /* White */
-    padding: 2rem;
+    padding: 1.5rem; /* Reduced padding */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
@@ -68,21 +68,21 @@ nav a:hover {
 .section-title {
     background-color: #002147; /* Oxford Blue */
     color: #ffffff; /* White */
-    padding: 10px;
+    padding: 8px; /* Reduced padding */
     border-radius: 8px;
     text-align: center;
-    margin-bottom: 20px;
-    font-size: 20px;
+    margin-bottom: 15px; /* Reduced margin */
+    font-size: 18px; /* Slightly reduced font size */
     font-weight: bold;
 }
 
 .section-content {
     background-color: #D3D3D3; /* Light Gray */
-    padding: 20px;
+    padding: 15px; /* Reduced padding */
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Reduced margin */
     color: #000000; /* Black */
-    font-size: 16px;
+    font-size: 14px; /* Slightly reduced font size */
 }
 
 ul {
@@ -91,7 +91,7 @@ ul {
 }
 
 ul li {
-    padding: 0.5rem 0;
+    padding: 0.4rem 0; /* Reduced padding */
 }
 
 ul li span {
@@ -99,7 +99,7 @@ ul li span {
 }
 
 ul li ul {
-    padding-left: 1rem;
+    padding-left: 0.8rem; /* Reduced padding */
 }
 
 a {
@@ -125,13 +125,13 @@ a:hover {
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
+    gap: 0.8rem; /* Reduced gap */
+    margin-top: 0.5rem; /* Reduced margin */
 }
 
 .social-icons a {
     color: #ffffff; /* White */
-    font-size: 1.5rem;
+    font-size: 1.3rem; /* Slightly reduced font size */
     text-decoration: none;
 }
 
@@ -141,7 +141,7 @@ a:hover {
 
 footer {
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem; /* Reduced padding */
     background-color: #2F3C52; /* Prussian Blue */
     color: #ffffff; /* White */
     position: relative;
@@ -150,17 +150,17 @@ footer {
 }
 
 footer p {
-    margin: 0.5rem 0;
+    margin: 0.3rem 0; /* Reduced margin */
 }
 
 footer .expertise {
-    font-size: 1rem;
-    margin-bottom: 1rem;
+    font-size: 1rem; /* Adjusted font size */
+    margin-bottom: 0.5rem; /* Reduced margin */
 }
 
 .section {
-    padding-top: 3rem;
-    margin-top: -3rem;
+    padding-top: 2.5rem; /* Reduced padding */
+    margin-top: -2.5rem; /* Adjusted margin */
 }
 
 .note {
@@ -175,9 +175,9 @@ footer .expertise {
 
 pre {
     background-color: #ffffff; /* White */
-    padding: 10px;
+    padding: 8px; /* Reduced padding */
     border: 1px solid #2F3C52; /* Prussian Blue */
     border-radius: 8px;
     color: #000000; /* Black */
-    font-size: 16px;
+    font-size: 14px; /* Slightly reduced font size */
 }
