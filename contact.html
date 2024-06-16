@@ -10,7 +10,18 @@
 </head>
 <body>
     <div class="background"></div>
-    <header></header> <!-- Header will be loaded here -->
+    <header>
+        <h1>Carlos C. Gomez, PhD</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="education.html">Education</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <p class="tagline">Psychologist, Data Science Enthusiast, and Lifelong Learner</p>
+    </header>
     <div class="separator"></div>
     <div class="container">
         <div id="contact" class="section">
@@ -19,13 +30,38 @@
                 <p>
                     For any inquiries or further information, contact me at <a href="mailto:cgomez@gomezphd.com">cgomez@gomezphd.com</a>.
                 </p>
+                <form id="contactForm" action="https://formsubmit.co/your_email@example.com" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
                 <div class="social-icons">
                     <a href="https://www.linkedin.com/in/gomezphd/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
                 </div>
             </div>
         </div>
     </div>
-    <footer></footer> <!-- Footer will be loaded here -->
+    <footer>
+        <p class="expertise">Leveraging expertise in psychology and data science to enhance healthcare and user experiences.</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/gomezphd/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:cgomez@gomezphd.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/gomezphd" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://join.slack.com/t/gomezphd/shared_invite/your-slack-invite-link-here" target="_blank"><i class="fab fa-slack"></i></a>
+        </div>
+        <p>&copy; 2024 Carlos C. Gomez, PhD. All Rights Reserved.</p>
+    </footer>
+    <button id="scrollToTopBtn" title="Go to top">Top</button>
     <script src="js/script.js"></script>
 </body>
 </html>
