@@ -130,8 +130,13 @@ a:hover {
 }
 
 .social-icons a {
-    color: #002147; /* Oxford Blue */
+    color: #ffffff; /* White */
     font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #4682B4; /* Steel Blue */
 }
 
 footer {
@@ -139,6 +144,13 @@ footer {
     padding: 1rem;
     background-color: #2F3C52; /* Prussian Blue */
     color: #ffffff; /* White */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0.5rem 0;
 }
 
 .section {
