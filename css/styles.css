@@ -143,41 +143,4 @@ footer {
     text-align: center;
     padding: 0.5rem 1rem; /* Reduced padding */
     background-color: #2F3C52; /* Prussian Blue */
-    color: #ffffff; /* White */
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    margin: 0.3rem 0; /* Reduced margin */
-}
-
-footer .expertise {
-    font-size: 1.1rem; /* Adjusted font size */
-    margin-bottom: 0.5rem; /* Reduced margin */
-}
-
-.section {
-    padding-top: 2.5rem; /* Reduced padding */
-    margin-top: -2.5rem; /* Adjusted margin */
-}
-
-.note {
-    color: #627383; /* Payne's Gray */
-    font-weight: bold;
-}
-
-.important {
-    color: #658196; /* Slate Gray */
-    font-weight: bold;
-}
-
-pre {
-    background-color: #ffffff; /* White */
-    padding: 8px; /* Reduced padding */
-    border: 1px solid #2F3C52; /* Prussian Blue */
-    border-radius: 8px;
-    color: #000000; /* Black */
-    font-size: 14px; /* Slightly reduced font size */
-}
+    color: #ffffff; /* Whi
