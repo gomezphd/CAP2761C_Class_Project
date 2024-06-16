@@ -17,7 +17,7 @@
 </head>
 <body>
     <div class="background"></div>
-    <div id="header-placeholder"></div>
+    <div id="header-placeholder">Loading header...</div>
     <div class="separator"></div>
     <div class="container">
         <div id="home" class="section">
@@ -27,17 +27,20 @@
             </div>
         </div>
     </div>
-    <div id="footer-placeholder"></div>
+    <div id="footer-placeholder">Loading footer...</div>
     <script src="js/script.js"></script>
     <script>
-        // Load header and footer components
+        // Load header component
         fetch('components/header.html')
             .then(response => response.text())
-            .then(data => document.getElementById("header-placeholder").innerHTML = data);
+            .then(data => document.getElementById("header-placeholder").innerHTML = data)
+            .catch(error => console.error('Error loading header:', error));
 
+        // Load footer component
         fetch('components/footer.html')
             .then(response => response.text())
-            .then(data => document.getElementById("footer-placeholder").innerHTML = data);
+            .then(data => document.getElementById("footer-placeholder").innerHTML = data)
+            .catch(error => console.error('Error loading footer:', error));
     </script>
 </body>
 </html>
