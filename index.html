@@ -10,25 +10,15 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/typography.css">
     <link rel="stylesheet" href="css/colors.css">
-    <link rel="stylesheet" href="css/styles.css"> <!-- Keeping this for now until fully modularized -->
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
 </head>
 <body>
     <div class="background"></div>
-    <header>
-        <h1>Carlos C. Gomez, PhD</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Me</a>
-            <a href="education.html">Education</a>
-            <a href="projects.html">Projects</a>
-            <a href="skills.html">Skills</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <p class="tagline">Psychologist, Data Science Enthusiast, and Lifelong Learner</p>
-    </header>
-
+    <div id="header-placeholder"></div>
     <div class="separator"></div>
-
     <div class="container">
         <div id="home" class="section">
             <div class="section-title">Welcome to My Portfolio</div>
@@ -37,16 +27,17 @@
             </div>
         </div>
     </div>
+    <div id="footer-placeholder"></div>
+    <script src="js/script.js"></script>
+    <script>
+        // Load header and footer components
+        fetch('components/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById("header-placeholder").innerHTML = data);
 
-    <footer>
-        <p class="expertise">Leveraging expertise in psychology and data science to enhance healthcare and user experiences.</p>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/gomezphd/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:cgomez@gomezphd.com" target="_blank"><i class="fas fa-envelope"></i></a>
-            <a href="https://github.com/gomezphd" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://join.slack.com/t/gomezphd/shared_invite/your-slack-invite-link-here" target="_blank"><i class="fab fa-slack"></i></a>
-        </div>
-        <p>&copy; 2024 Carlos C. Gomez, PhD. All Rights Reserved.</p>
-    </footer>
+        fetch('components/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById("footer-placeholder").innerHTML = data);
+    </script>
 </body>
 </html>
