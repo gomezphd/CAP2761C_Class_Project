@@ -1,9 +1,11 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
@@ -11,6 +13,7 @@ body {
     color: #333333; /* Dark Grey Text */
 }
 
+/* Header Styling */
 header {
     background-color: #002147; /* Oxford Blue */
     color: #ffffff; /* White */
@@ -31,6 +34,7 @@ h1 {
     margin: 0.5rem 0; /* Adjusted margin */
 }
 
+/* Navigation Styling */
 nav {
     background-color: #2F3C52; /* Prussian Blue */
     display: flex;
@@ -57,6 +61,7 @@ nav a:hover {
     margin: 1rem 0; /* Added margin for spacing */
 }
 
+/* Container Styling */
 .container {
     max-width: 1000px;
     margin: 2rem auto; /* Increased margin for better spacing */
@@ -66,6 +71,7 @@ nav a:hover {
     border-radius: 10px;
 }
 
+/* Section Title Styling */
 .section-title {
     background-color: #002147; /* Oxford Blue */
     color: #ffffff; /* White */
@@ -77,6 +83,7 @@ nav a:hover {
     font-weight: bold;
 }
 
+/* Section Content Styling */
 .section-content {
     background-color: #D3D3D3; /* Light Gray */
     padding: 20px;
@@ -86,6 +93,7 @@ nav a:hover {
     font-size: 1rem; /* Adjusted font size */
 }
 
+/* List Styling */
 ul {
     list-style-type: none;
     padding-left: 0;
@@ -103,6 +111,7 @@ ul li ul {
     padding-left: 1rem;
 }
 
+/* Link Styling */
 a {
     color: #002147; /* Oxford Blue */
     text-decoration: none;
@@ -113,6 +122,7 @@ a:hover {
     color: #4682B4; /* Steel Blue */
 }
 
+/* Background Styling */
 .background {
     background: linear-gradient(135deg, #002147, #4682B4); /* Oxford Blue to Steel Blue */
     height: 100vh;
@@ -123,6 +133,7 @@ a:hover {
     z-index: -1;
 }
 
+/* Social Icons Styling */
 .social-icons {
     display: flex;
     justify-content: center;
@@ -139,6 +150,7 @@ a:hover {
     color: #4682B4; /* Steel Blue */
 }
 
+/* Footer Styling */
 footer {
     text-align: center;
     padding: 1rem; /* Adjusted padding */
@@ -158,6 +170,7 @@ footer .expertise {
     margin-bottom: 0.5rem; /* Adjusted margin */
 }
 
+/* Section Specific Styling */
 .section {
     padding-top: 3rem;
     margin-top: -3rem;
