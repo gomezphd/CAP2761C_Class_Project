@@ -1,70 +1,91 @@
-# Tech Portfolio of Carlos C. Gomez, PhD  
-[cgomez@gomezphd.com](mailto:cgomez@gomezphd.com).
-[LinkedIN](https://www.linkedin.com/in/gomezphd/)
+# Carlos C. Gomez, PhD Portfolio
 
-A class project to develop a first draft portfolio on GitHub.
+## About This Project
 
-## Projects
+This project is dedicated to developing a custom portfolio template. It serves as a platform to showcase my professional background, skills, projects, and educational achievements. This portfolio template is designed to be both aesthetically pleasing and functionally robust, making it a valuable tool for networking and job searching.
 
-### [Project 1: Airline On-Time Arrival Performance Analysis for Domestic Flights in March 2024](https://github.com/gomezphd/CAP2761C_Class_Project/tree/main/Airlines)
+### Usage and Permissions
 
+This portfolio template is intended for personal use. If you wish to use or adapt this template for your own purposes, please provide appropriate credit to the author, Carlos C. Gomez, PhD. For permission and further inquiries, contact me at [cgomez@gomezphd.com](mailto:cgomez@gomezphd.com).
 
-This project involves analyzing the on-time performance of domestic flights in March 2024. The analysis covers various aspects such as the percentage of on-time arrivals, reasons for delays, and performance comparison among different airlines.
+## Directory Structure
 
+```plaintext
+C:.
+│   about.html
+│   contact.html
+│   education.html
+│   git
+│   index.html
+│   projects.html
+│   README.md
+│   skills.html
+│
+├───assets
+├───components
+│       footer.html
+│       header.html
+│
+├───css
+│   │   animations.css
+│   │   colors.css
+│   │   components.css
+│   │   layout.css
+│   │   reset.css
+│   │   responsive.css
+│   │   styles.css
+│   │   typography.css
+│   │   utilities.css
+│   │
+│   └───readme
+│           animations.md
+│           colors.md
+│           components.md
+│           layout.md
+│           reset.md
+│           responsive.md
+│           typography.md
+│           utilities.md
+│
+├───images
+├───js
+│       script.js
+│
+├───projects
+│       project1.html
+│       project2.html
+│
+└───scripts
+        script.js.js
+```
 
-## Education
+## CSS Structure
 
-- **Cornell University**: BS, Industrial and Labor Relations (1991 - 1995)
-- **Florida State University**: PhD, Counseling Psychology and Human Systems, Counseling Psychology & School Psychology (2000 - 2004)
-- **Miami Dade College**: Business Intelligence Professional, Data Analytics (Aug 2023 - Jul 2024)
-- **Florida State University**: MS & EdS in Mental Health Counseling and Human Systems (1998 - 2000)
+The CSS for this project is modularized into several files, each serving a specific purpose. Below is an overview of the CSS files and their responsibilities:
 
-## Tech Certificates
+### `reset.css`
+Contains CSS reset rules to ensure a consistent baseline across different browsers.
 
-- **IBM Machine Learning with Python** (Issued Jan 2024)
-- **AI For Everyone** (Issued Dec 2023)
-- **IBM Data Analysis with Python** (Issued Dec 2023)
-- **IBM Data Science Methodology** (Issued Dec 2023)
-- **IBM Python Project for Data Science** (Issued Dec 2023)
-- **IBM Python for Data Science, AI & Development** (Issued Dec 2023)
-- **Tools for Data Science** (Issued Dec 2023)
-- **What is Data Science?** (Issued Dec 2023)
+### `layout.css`
+Defines the overall layout and structure of the page, including body, container, header, footer, and background styling.
 
-## Non-Tech Professional Licenses & Certifications
-- **Licensed Psychologist, State of Florida** (Issued May 2006)
-- **PSYPACT Authority to Practice Interjurisdictional Telepsychology** (Issued Sep 2023)
-- **National Certified Counselor (NCC)** (Issued Jun 2000)
+### `typography.css`
+Manages font styles, sizes, and text-related properties, including styles for headings, paragraphs, and links.
 
-## OtherCertifications
-- **RRCA Certified Adult Distance Running Coach** (Issued Sep 2023)
-- **Precision Nutrition Level 1 Certified** (Issued Jun 2023)
+### `colors.css`
+Defines color schemes and theming rules, including color variables and background colors.
 
+### `components.css`
+Styles individual UI components such as buttons, forms, navigation bars, cards, and modals.
 
-## Skills
+### `utilities.css`
+Provides utility classes for common styles like margin, padding, display, and text alignment.
 
-### Technical Skills
-- Advanced Statistics (Undergraduate and Graduate Level)
-- Clinical Research Methods
-- Ethical Reasoning
-- Python
-- Data Analysis
-- Machine Learning
-- SQL (Azure Visual Studio, MySQL, SQL Server Management Studio,& SQLite )
-- GitHub
-- Jupyter
+### `responsive.css`
+Contains styles and media queries to handle responsive design and adapt styles for different screen sizes.
 
-### Non-Technical Skills
-
-- Psychological Testing
-- Life Coaching
-- Counseling Psychology
-- Psychological Assessment
-- Clinical Psychology
-- Executive Coaching
-- Career Counseling
-- Mental Health Counseling
-- Psychotherapy
-
+### `animations.css`
+Manages CSS animations and transitions, including keyframes and transition rules.
 
 ## Contact
 
