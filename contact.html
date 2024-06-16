@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Carlos C. Gomez, Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
@@ -22,27 +23,20 @@
         </nav>
         <p class="tagline">Psychologist, Data Science Enthusiast, and Lifelong Learner</p>
     </header>
+
     <div class="separator"></div>
+
     <div class="container">
         <div id="contact" class="section">
-            <div class="section-title">Contact</div>
             <div class="section-content">
-                <p>
-                    For any inquiries or further information, contact me at <a href="mailto:cgomez@gomezphd.com">cgomez@gomezphd.com</a>.
-                </p>
-                <form id="contactForm" action="https://formsubmit.co/your_email@example.com" method="POST">
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
+                <p>For any inquiries or further information, contact me at <a href="mailto:cgomez@gomezphd.com">cgomez@gomezphd.com</a>.</p>
+                <form action="https://formsubmit.co/cgomez@gomezphd.com" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
                     <button type="submit">Send</button>
                 </form>
                 <div class="social-icons">
@@ -51,6 +45,7 @@
             </div>
         </div>
     </div>
+
     <footer>
         <p class="expertise">Leveraging expertise in psychology and data science to enhance healthcare and user experiences.</p>
         <div class="social-icons">
@@ -61,7 +56,6 @@
         </div>
         <p>&copy; 2024 Carlos C. Gomez, PhD. All Rights Reserved.</p>
     </footer>
-    <button id="scrollToTopBtn" title="Go to top">Top</button>
     <script src="js/script.js"></script>
 </body>
 </html>
