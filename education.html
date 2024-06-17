@@ -6,11 +6,18 @@
     <title>Education - Carlos C. Gomez, PhD</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
 </head>
 <body>
     <div class="background"></div>
-    <div id="header-placeholder"></div>
+    <div id="header-placeholder">Loading header...</div>
     <div class="separator"></div>
     <div class="container">
         <div id="education" class="section">
@@ -72,17 +79,7 @@
             </div>
         </div>
     </div>
-    <div id="footer-placeholder"></div>
+    <div id="footer-placeholder">Loading footer...</div>
     <script src="js/script.js"></script>
-    <script>
-        // Load header and footer components
-        fetch('components/header.html')
-            .then(response => response.text())
-            .then(data => document.getElementById("header-placeholder").innerHTML = data);
-
-        fetch('components/footer.html')
-            .then(response => response.text())
-            .then(data => document.getElementById("footer-placeholder").innerHTML = data);
-    </script>
 </body>
 </html>

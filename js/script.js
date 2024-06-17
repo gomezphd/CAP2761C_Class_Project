@@ -4,11 +4,14 @@ function loadComponent(component, target) {
         .then(response => response.text())
         .then(data => {
             document.querySelector(target).innerHTML = data;
-        });
+            console.log(`Loaded ${component} into ${target}`);
+        })
+        .catch(error => console.error(`Error loading ${component}:`, error));
 }
 
 // Load header and footer
 document.addEventListener("DOMContentLoaded", function() {
-    loadComponent('components/header.html', 'header');
-    loadComponent('components/footer.html', 'footer');
+    console.log("DOM fully loaded and parsed");
+    loadComponent('components/header.html', '#header-placeholder');
+    loadComponent('components/footer.html', '#footer-placeholder');
 });
