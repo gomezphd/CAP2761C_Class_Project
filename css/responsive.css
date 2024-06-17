@@ -1,0 +1,32 @@
+/* responsive.css */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+        margin: 0 0.5rem;
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+
+    .section-content {
+        font-size: 0.9rem;
+        padding: 1rem;
+    }
+
+    .social-icons a {
+        font-size: 1.2rem;
+    }
+}
