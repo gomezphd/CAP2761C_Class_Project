@@ -1,64 +1,34 @@
 /* components.css */
 
-/* Navigation Styling */
-nav {
-    background-color: var(--prussian-blue);
+/* Form Styling */
+form {
     display: flex;
-    justify-content: center;
-    padding: 0.5rem 0; /* Adjusted padding for better spacing */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    gap: 1rem;
 }
 
-nav a {
-    color: var(--white);
-    text-decoration: none;
-    margin: 0 1rem; /* Increased margin for better spacing */
-    font-size: 1.2rem; /* Slightly increased font size */
+form label {
+    font-weight: bold;
 }
 
-nav a:hover {
-    color: var(--steel-blue);
-    text-decoration: underline;
+form input,
+form textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
-.separator {
-    background-color: var(--prussian-blue);
-    height: 2px;
-    margin: 1rem 0; /* Added margin for spacing */
+form button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #002147; /* Oxford Blue */
+    color: #ffffff; /* White */
+    font-size: 1rem;
+    cursor: pointer;
 }
 
-/* Social Icons Styling */
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem; /* Adjusted gap for better spacing */
-    margin-top: 1rem; /* Adjusted margin */
-}
-
-.social-icons a {
-    color: var(--white);
-    font-size: 1.5rem;
-}
-
-.social-icons a:hover {
-    color: var(--steel-blue);
-}
-
-/* Footer Styling */
-footer {
-    text-align: center;
-    padding: 1rem; /* Adjusted padding */
-    background-color: var(--prussian-blue);
-    color: var(--white);
-    width: 100%;
-    margin-top: auto; /* Ensures footer stays at the bottom */
-}
-
-footer p {
-    margin: 0.5rem 0; /* Adjusted margin */
-}
-
-footer .expertise {
-    font-size: 1.1rem; /* Adjusted font size */
-    margin-bottom: 0.5rem; /* Adjusted margin */
+form button:hover {
+    background-color: #4682B4; /* Steel Blue */
 }

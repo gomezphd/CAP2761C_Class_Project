@@ -1,15 +1,33 @@
-// Function to load header and footer
-function loadComponent(component, target) {
-    fetch(component)
+// script.js
+
+document.addEventListener('DOMContentLoaded', () => {
+    loadFooter();
+    handleFormSubmission();
+});
+
+function loadFooter() {
+    fetch('footer.html')
         .then(response => response.text())
         .then(data => {
-            document.querySelector(target).innerHTML = data;
+            document.getElementById('footer-placeholder').innerHTML = data;
         })
-        .catch(error => console.error(`Error loading ${component}:`, error));
+        .catch(error => console.error('Error loading footer:', error));
 }
 
-// Load header and footer
-document.addEventListener("DOMContentLoaded", function() {
-    loadComponent('components/header.html', '#header-placeholder');
-    loadComponent('components/footer.html', '#footer-placeholder');
-});
+function handleFormSubmission() {
+    const form = document.getElementById('contactForm');
+    if (form) {
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Display a confirmation message
+            alert('Your message has been sent successfully!');
+
+            // Optionally, reset the form
+            form.reset();
+
+            // Continue with the form submission to FormSubmit
+            this.submit();
+        });
+    }
+}
