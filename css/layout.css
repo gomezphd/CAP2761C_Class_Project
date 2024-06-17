@@ -5,13 +5,14 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    margin: 0;
 }
 
-/* Ensure the container takes up the necessary space */
 html, body {
     height: 100%;
 }
 
+/* Container Styling */
 .container {
     max-width: 1000px;
     margin: 2rem auto;
@@ -25,20 +26,23 @@ html, body {
     justify-content: flex-start;
 }
 
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--prussian-blue);
+    color: var(--white);
+    width: 100%;
+    margin-top: auto; /* Ensures footer stays at the bottom */
+}
+
+/* Background Styling */
 .background {
-    background: linear-gradient(135deg, var(--oxford-blue), var(--steel-blue)); /* Oxford Blue to Steel Blue */
+    background: linear-gradient(135deg, var(--oxford-blue), var(--steel-blue));
     height: 100%;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: -1;
-}
-
-header {
-    background-color: var(--oxford-blue);
-    color: var(--white);
-    padding: 1rem 0; /* Increased padding for better spacing */
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
