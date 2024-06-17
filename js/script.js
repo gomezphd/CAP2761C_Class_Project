@@ -1,4 +1,3 @@
-
 // Function to load header and footer
 function loadComponent(component, target) {
     fetch(component)
