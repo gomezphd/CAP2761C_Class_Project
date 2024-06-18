@@ -165,10 +165,12 @@ nav ul li ul li a {
     text-align: center;
     padding: 20px 0;
     border-top: 3px solid var(--light-sky-blue);
-    position: relative; /* Ensure footer is positioned relative */
-    bottom: 0;
     width: 100%;
     margin-top: auto; /* Pushes footer to the bottom */
+}
+
+.social-icons {
+    margin-bottom: 10px; /* Add some space between icons and copyright text */
 }
 
 .social-icons a {
@@ -214,4 +216,12 @@ nav ul li ul li a {
     text-align: center;
     margin-top: 10px;
     color: green;
+}
+
+/* Header Styles for Section */
+h2 {
+    color: var(--oxford-blue);
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
 }
