@@ -97,7 +97,7 @@ nav ul li a {
 }
 nav ul li a:hover, nav ul li a.active {
     background-color: var(--steel-blue);
-    color: var (--white);
+    color: var(--white);
 }
 nav ul li a.active {
     font-weight: bold;
@@ -165,12 +165,10 @@ nav ul li ul li a {
     text-align: center;
     padding: 20px 0;
     border-top: 3px solid var(--light-sky-blue);
+    position: relative; /* Ensure footer is positioned relative */
+    bottom: 0;
     width: 100%;
     margin-top: auto; /* Pushes footer to the bottom */
-}
-
-.social-icons {
-    margin-bottom: 10px; /* Add some space between icons and copyright text */
 }
 
 .social-icons a {
@@ -188,4 +186,32 @@ nav ul li ul li a {
     display: flex;
     flex-direction: column;
     max-width: 600px;
-   
+    margin: 0 auto;
+}
+#contact label {
+    margin-top: 10px;
+}
+#contact input, #contact textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
+}
+#contact button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--oxford-blue);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+#contact button:hover {
+    background-color: var(--steel-blue);
+}
+#formSuccess {
+    text-align: center;
+    margin-top: 10px;
+    color: green;
+}
