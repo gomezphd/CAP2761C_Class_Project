@@ -1,0 +1,204 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Color Variables: Define the color palette for easy management */
+:root {
+    --oxford-blue: #002147;
+    --prussian-blue: #2F3C52;
+    --steel-blue: #4682B4;
+    --paynes-gray: #627383;
+    --slate-gray: #658196;
+    --light-sky-blue: #93B5CE;
+    --light-steel-blue: #B0C4DE;
+    --very-light-blue: #E5F2FA;
+    --alice-blue: #F0F8FF;
+    --white: #FFFFFF;
+    --gainsboro: #DCDCDC;
+    --light-gray: #D3D3D3;
+    --dark-gray: #A9A9A9;
+    --gray: #808080;
+    --dim-gray: #696969;
+    --dark-slate-gray: #2F4F4F;
+    --black: #000000;
+}
+
+/* General Styles */
+body {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    background-color: var(--alice-blue);
+    color: var(--dark-slate-gray);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(90deg, var(--oxford-blue), var(--prussian-blue));
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 3px solid var(--light-sky-blue);
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+h1 {
+    margin: 0;
+    color: var(--white);
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+}
+p {
+    margin: 5px 0 0 0;
+    color: var(--very-light-blue);
+    font-size: 1em;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+nav ul li {
+    margin: 0 10px;
+    position: relative;
+}
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 5px;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+nav ul li a:hover, nav ul li a.active {
+    background-color: var(--steel-blue);
+    color: var(--white);
+}
+nav ul li a.active {
+    font-weight: bold;
+    border-bottom: 2px solid var(--light-sky-blue);
+}
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--prussian-blue);
+    padding: 0;
+    list-style: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+nav ul li:hover ul {
+    display: block;
+}
+nav ul li ul li {
+    margin: 0;
+}
+nav ul li ul li a {
+    padding: 10px 15px;
+    width: 180px;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--white);
+    margin: 5px;
+    transition: all 0.3s;
+}
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--prussian-blue);
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+    nav ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+    nav ul.show {
+        display: flex;
+    }
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* Footer Styles */
+.footer {
+    background-color: var(--prussian-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 20px 0;
+    border-top: 3px solid var(--light-sky-blue);
+}
+
+.social-icons a {
+    color: var(--white);
+    margin: 0 10px;
+    font-size: 1.5em;
+}
+
+.social-icons a:hover {
+    color: var(--light-sky-blue);
+}
+
+/* Contact Form Styles */
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+#contact label {
+    margin-top: 10px;
+}
+#contact input, #contact textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
+}
+#contact button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--oxford-blue);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+#contact button:hover {
+    background-color: var(--steel-blue);
+}
