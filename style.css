@@ -179,6 +179,8 @@ nav ul li ul li a {
 #contact form {
     display: flex;
     flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
 }
 #contact label {
     margin-top: 10px;
@@ -201,4 +203,9 @@ nav ul li ul li a {
 }
 #contact button:hover {
     background-color: var(--steel-blue);
+}
+#formSuccess {
+    text-align: center;
+    margin-top: 10px;
+    color: green;
 }
