@@ -40,6 +40,8 @@ main {
     flex: 1;
     display: flex;
     flex-direction: column;
+    justify-content: center; /* Ensures the main content is centered */
+    padding: 20px; /* Add some padding for better spacing */
 }
 
 /* Header Styles */
@@ -163,6 +165,10 @@ nav ul li ul li a {
     text-align: center;
     padding: 20px 0;
     border-top: 3px solid var(--light-sky-blue);
+    position: relative; /* Ensure footer is positioned relative */
+    bottom: 0;
+    width: 100%;
+    margin-top: auto; /* Pushes footer to the bottom */
 }
 
 .social-icons a {
