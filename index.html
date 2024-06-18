@@ -3,199 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Header and Footer</title>
+    <title>Carlos C. Gomez, PhD - Portfolio</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <!-- FontAwesome for social media icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        /* Basic Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Color Variables: Define the color palette for easy management */
-        :root {
-            --oxford-blue: #002147;
-            --prussian-blue: #2F3C52;
-            --steel-blue: #4682B4;
-            --paynes-gray: #627383;
-            --slate-gray: #658196;
-            --light-sky-blue: #93B5CE;
-            --light-steel-blue: #B0C4DE;
-            --very-light-blue: #E5F2FA; /* New very light blue color */
-            --alice-blue: #F0F8FF;
-            --white: #FFFFFF;
-            --gainsboro: #DCDCDC;
-            --light-gray: #D3D3D3;
-            --dark-gray: #A9A9A9;
-            --gray: #808080;
-            --dim-gray: #696969;
-            --dark-slate-gray: #2F4F4F;
-            --black: #000000;
-        }
-
-        /* General Styles */
-        body {
-            font-family: 'Open Sans', Helvetica, Arial, sans-serif; /* Apply font family */
-            background-color: var(--alice-blue); /* Set background color */
-            color: var(--dark-slate-gray); /* Set text color */
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        main {
-            flex: 1; /* Make main content fill the remaining space */
-            display: flex;
-            flex-direction: column;
-        }
-
-        /* Header Styles */
-        header {
-            background: linear-gradient(90deg, var(--oxford-blue), var(--prussian-blue)); /* Apply gradient background */
-            padding: 20px 0;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
-            position: sticky; /* Make header sticky */
-            top: 0;
-            z-index: 1000; /* Ensure header stays on top */
-            border-bottom: 3px solid var(--light-sky-blue); /* Thin ribbon at the bottom of the header */
-        }
-        .container {
-            max-width: 1200px; /* Center the content */
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 20px;
-        }
-        h1 {
-            margin: 0;
-            color: var(--white); /* Set text color */
-            font-size: 2.5em; /* Increase font size */
-            letter-spacing: 1px;
-            font-family: 'Raleway', Helvetica, Arial, sans-serif; /* Apply Raleway font family */
-        }
-        p {
-            margin: 5px 0 0 0;
-            color: var(--very-light-blue); /* Set text color to very light blue */
-            font-size: 1em;
-            font-family: 'Open Sans', Helvetica, Arial, sans-serif; /* Apply font family */
-        }
-        nav ul {
-            list-style: none; /* Remove list bullets */
-            display: flex;
-            margin: 0;
-            padding: 0;
-            position: relative;
-        }
-        nav ul li {
-            margin: 0 10px;
-            position: relative;
-        }
-        nav ul li a {
-            color: var(--white); /* Set text color */
-            text-decoration: none;
-            padding: 10px 15px;
-            display: inline-block;
-            transition: background 0.3s, color 0.3s; /* Smooth transition for hover effect */
-            border-radius: 5px; /* Rounded corners */
-            font-family: 'Open Sans', Helvetica, Arial, sans-serif; /* Apply font family */
-        }
-        nav ul li a:hover, nav ul li a.active {
-            background-color: var(--steel-blue); /* Hover and active state background */
-            color: var(--white);
-        }
-        nav ul li a.active {
-            font-weight: bold;
-            border-bottom: 2px solid var(--light-sky-blue); /* Active state underline */
-        }
-        nav ul li ul {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: var(--prussian-blue); /* Dropdown background */
-            padding: 0;
-            list-style: none;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Dropdown shadow */
-        }
-        nav ul li:hover ul {
-            display: block; /* Show dropdown on hover */
-        }
-        nav ul li ul li {
-            margin: 0;
-        }
-        nav ul li ul li a {
-            padding: 10px 15px;
-            width: 180px; /* Set dropdown width */
-        }
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-        }
-        .hamburger div {
-            width: 25px;
-            height: 3px;
-            background-color: var(--white); /* Hamburger bar color */
-            margin: 5px;
-            transition: all 0.3s;
-        }
-        @media (max-width: 768px) {
-            nav ul {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-                background-color: var(--prussian-blue); /* Mobile menu background */
-                position: absolute;
-                top: 60px;
-                left: 0;
-            }
-            nav ul li {
-                text-align: center;
-                margin: 10px 0;
-            }
-            nav ul.show {
-                display: flex;
-            }
-            .hamburger {
-                display: flex; /* Show hamburger on mobile */
-            }
-        }
-
-        /* Footer Styles */
-        .footer {
-            background-color: var(--prussian-blue); /* Footer background color */
-            color: var(--white); /* Footer text color */
-            text-align: center;
-            padding: 20px 0;
-            border-top: 3px solid var(--light-sky-blue); /* Match the ribbon in the header */
-        }
-
-        .social-icons a {
-            color: var(--white); /* Social icon color */
-            margin: 0 10px;
-            font-size: 1.5em;
-        }
-
-        .social-icons a:hover {
-            color: var (--light-sky-blue); /* Hover state for social icons */
-        }
-    </style>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const hamburger = document.querySelector('.hamburger');
-            const navLinks = document.querySelector('nav ul');
-            
-            hamburger.addEventListener('click', function () {
-                navLinks.classList.toggle('show'); /* Toggle mobile menu */
-            });
-        });
-    </script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -215,20 +29,98 @@
                     <li>
                         <a href="#about">About</a>
                         <ul>
-                            <li><a href="#bio">Bio</a></li>
-                            <li><a href="#experience">Experience</a></li>
-                            <li><a href="#education">Education</a></li>
+                            <li><a href="#about-me">About Me</a></li>
+                            <li><a href="#completed-education">Completed Education</a></li>
+                            <li><a href="#in-progress-education">Education in Progress</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                        <ul>
+                            <li><a href="#skills-list">Skills</a></li>
+                            <li><a href="#tech-certificates">Tech Certificates</a></li>
+                            <li><a href="#clinical-licenses">Clinical Licenses and Certifications</a></li>
+                            <li><a href="#other-certifications">Other Certifications</a></li>
                         </ul>
                     </li>
                     <li><a href="https://github.com/gomezphd/CAP2761C_Class_Project/tree/main/Airlines">Azure Project</a></li>
-                    <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <!-- Main content goes here -->
+        <section id="home">
+            <!-- Home content goes here -->
+        </section>
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>I’m Carlos C. Gomez, PhD, a licensed psychologist with 25 years of clinical experience in psychological assessment, intervention services, counseling, and psychotherapy...</p>
+        </section>
+        <section id="completed-education">
+            <h2>Completed Education</h2>
+            <ul>
+                <li>Bachelor of Science | Cornell University | Major: Industrial and Labor Relations</li>
+                <li>Master of Science | Florida State University | Major: Counseling and Human Systems, Concentration: Mental Health Counseling, CACREP Accredited Program</li>
+                <li>Specialist in Education | Florida State University | Major: Counseling and Human Systems, Concentration: Mental Health Counseling, CACREP Accredited Program</li>
+                <li>Doctor of Philosophy | Florida State University | Major: Combined Counseling Psychology and School Psychology, Concentration: Counseling Psychology, APA Accredited Program</li>
+                <li>Clinical Psychology Predoctoral Intern | Jackson Memorial Hospital / University of Miami Miller School of Medicine, APA Accredited Program</li>
+                <li>Clinical Health Psychology Postdoctoral Fellow | Jackson Memorial Hospital / University of Miami Miller School of Medicine, 2005, United Healthcare Grant | Miller School of Medicine, Department of Family Medicine</li>
+            </ul>
+        </section>
+        <section id="in-progress-education">
+            <h2>Education in Progress</h2>
+            <ul>
+                <li>Business Intelligence Professional, Data Analytics: Miami Dade College, Aug 2023 - Jul 2024</li>
+                <li>Artificial Intelligence Awareness: Miami Dade College, Dec 2024</li>
+                <li>Data Science Professional Certificate: IBM, Aug 2024</li>
+            </ul>
+        </section>
+        <section id="skills-list">
+            <h2>Skills</h2>
+            <!-- Skills content goes here -->
+        </section>
+        <section id="tech-certificates">
+            <h2>Tech Certificates</h2>
+            <ul>
+                <li>Machine Learning with Python: IBM Coursera, Jan 2024</li>
+                <li>AI For Everyone: DeepLearning.AI Coursera, Dec 2023</li>
+                <li>Data Analysis with Python: IBM Coursera, Dec 2023</li>
+                <li>Data Science Methodology: IBM Coursera, Dec 2023</li>
+                <li>Python Project for Data Science: IBM Coursera, Dec 2023</li>
+                <li>Python for Data Science, AI & Development: IBM Coursera, Dec 2023</li>
+                <li>Tools for Data Science: IBM Coursera, Dec 2023</li>
+                <li>What is Data Science?: IBM Coursera, Dec 2023</li>
+                <li>Databases and SQL for Data Science with Python: IBM Coursera, May 2024</li>
+            </ul>
+        </section>
+        <section id="clinical-licenses">
+            <h2>Clinical Licenses and Certifications</h2>
+            <ul>
+                <li>Licensed Psychologist, State of Florida: Issued May 2006</li>
+                <li>PSYPACT Authority to Practice Interjurisdictional Telepsychology, 2023</li>
+                <li>National Certified Counselor (NCC): Issued Jun 2000</li>
+            </ul>
+        </section>
+        <section id="other-certifications">
+            <h2>Other Certifications</h2>
+            <ul>
+                <li>Distance Running: RRCA Certified Adult Distance Running Coach: Issued Sep 2023</li>
+                <li>Nutrition Coaching: Precision Nutrition Level 1 Certified: Issued Jun 2023</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="contact_form.html" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
     </main>
     <footer class="footer">
         <div class="social-icons">
@@ -238,5 +130,6 @@
         </div>
         <p>&copy; 2024 Carlos C. Gomez, PhD. All Rights Reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
